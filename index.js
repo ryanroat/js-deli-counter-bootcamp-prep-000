@@ -20,3 +20,21 @@ function nowServing (katzDeliLine) {
     return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
+
+function currentLine (katzDeliLine) {
+ let l = katzDeliLine.length;
+ 
+ if (l === 0) {
+   return `The line is currently empty.`;
+ }
+ 
+ let line = `The line is currently: `;
+ 
+ for (let i = 0; i < l; i++) {
+   line = line + `${i+1}. ${katzDeliLine[i]}`;
+   if (i < (l - 2)) {
+     line = line + `, `;
+   }
+   
+ }
+}
