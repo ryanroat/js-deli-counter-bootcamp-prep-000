@@ -35,6 +35,6 @@ function currentLine (katzDeliLine) {
    if (i < (l - 2)) {
      line = line + `, `;
    }
-   
  }
+return line;
 }
