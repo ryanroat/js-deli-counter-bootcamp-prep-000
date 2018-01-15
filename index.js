@@ -8,6 +8,6 @@ function takeANumber (katzDeliLine, newCust) {
   let l = katzDeliLine.length;
   
   katzDeliLine[l] = newCust;
-  
-  return l + 1;
+  l++
+  return `Welcome, ${newCust}. You are number ${l} in line.`;
 }
